@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="./stylesheet.css" />
+  <style>
+    /*JS behavior */
+    .hidden{display:none !important;}
+    .collapsed-form{max-height:0;overflow:hidden;transition:max-height .4s ease, opacity .25s ease;opacity:0}
+    .expanded-form{max-height:1000px;opacity:1;transition:max-height .4s ease, opacity .25s ease}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+    <header>
+        <div class="logo" href="#">
+            <img src="./Assets/critterly-logo.png" alt="Critterly Company logo">
+        </div>
+
+
+
+        <div class="navigation">
+            <a href="#"><span class="material-symbols-outlined">account_circle</span></a>
+
+
+            <a href="./Cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+
+
+
+            <a href="./index.html"><span class="material-symbols-outlined">home</span></a>
+        </div>
+    </header>
+
+  <main>
+    <section class="cart-container">
+      <div class="cart-items">
+        <h2>Shopping Cart</h2>
+        <table>
+          <thead>
+            <tr><th>Items</th><th>Price</th></tr>
+          </thead>
+          <tbody>
+            <!-- Default initial items (will be replaced by localStorage if present) -->
+            <tr class="cart-item">
+              <td class="item-info">
+                <input type="checkbox" class="item-check" title="item-check"/>
+                <img src="./Assets/Invoice-img1.png" alt="Hamster cage" />
+                <div>
+                  <a href="#">Hamster cage, clear hamster habitat, small pet enclosure, Critterly pet supplies...</a>
+                  <p class="stock">Only 7 left in stock</p>
+                  <p>Sold by: <a href="#">Pet Smart</a> | Shipped by: Critterly</p>
+                  <div class="item-actions">
+                    <div class="quantity"><button>-</button><span>1</span><button>+</button></div>
+                    <button class="delete-btn">Delete</button>
+                    <button class="save-btn">Save</button>
+                  </div>
+                </div>
+              </td>
+              <td class="price">$29.99</td>
+            </tr>
+
+            <tr class="cart-item">
+              <td class="item-info">
+                <input type="checkbox" class="item-check" title="item-check" />
+                <img src="./Assets/cart-img-2.png" alt="Hamster food" />
+                <div>
+                  <a href="#">Critterly hamster food, premium hamster seed mix, small pet food blend...</a>
+                  <p class="stock">Only 7 left in stock</p>
+                  <p>Sold by: <a href="#">Pet Smart</a> | Shipped by: Critterly</p>
+                  <div class="item-actions">
+                    <div class="quantity"><button>-</button><span>1</span><button>+</button></div>
+                    <button class="delete-btn">Delete</button>
+                    <button class="save-btn">Save</button>
+                  </div>
+                </div>
+              </td>
+              <td class="price">$19.99</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="cart-summary">
+        <div class="summary-box">
+          <p><strong>Subtotal:</strong> (0 items) $0.00</p>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+
+        <div class="subscription">
+          <a href="#"><img src="./Assets/cirtterly-subsrciption.png" alt="subscription"></a>
+          <p><strong>Join Critterly Gold</strong><br>for just $5.99 a month</p>
+        </div>
+
+        <div class="deal-box">
+          <h3>Deal of the day</h3>
+          <img src="./Assets/deal-of-the-day.png" alt="Deal" />
+          <p>Hamster playground cage, multi-level hamster habitat, interactive pet cage...</p>
+          <p><del>$99.99</del> <strong>Now $49.99</strong><br><span class="save">Save up to 50%</span></p>
+          <button class="add-btn">Add to cart</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="saved-items">
+      <h2>Saved Items</h2>
+      <div class="saved-grid">
+        <!-- Saved items (initial examples) -->
+        <div class="saved-card">
+          <img src="./Assets/cart-img-1.png" alt="Cat bed" />
+          <p>Plush cat bed, modern cat furniture</p>
+          <p>$29.99 | Free Shipping</p>
+          <div class="saved-actions">
+            <button class="delete-btn">Delete</button>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="about-cart">
+    <div class="footer-columns">
+      <div><h4>Customer Support</h4><a href="#">Help Center</a></div>
+      <div><h4>My Account</h4><a href="./login.html">Login/Register</a></div>
+      <div><h4>Company</h4><a href="#">About Critterly</a></div>
+      <div><h4>Tools</h4><a href="#">Affiliate Program</a></div>
+    </div>
+    <p>© Critterly Pet Store | All Rights Reserved 2025 | Deondre Williams</p>
+  </footer>
+
+  <!-- Shared JS for both pages -->
+  <script src="./index.js"></script>
+</body>
+</html>

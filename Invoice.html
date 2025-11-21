@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice Summary</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Gemstones&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./stylesheet.css" />
+</head>
+
+<body class="invoice-page">
+  <!-- Header -->
+  <header>
+    <div class="logo" href="#">
+      <img src="./Assets/critterly-logo.png" alt="Critterly Company logo" />
+    </div>
+    <div class="navigation">
+      <a href="#"><span class="material-symbols-outlined">account_circle</span></a>
+
+      <a href="./Cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+
+      <a href="./index.html"><span class="material-symbols-outlined">home</span></a>
+    </div>
+  </header>
+  <main>
+    <section>
+      <!-- Order Summary -->
+      <div class="invoice-container">
+        <button class="print-btn">Print</button>
+        <div class="order-summary-header">Order Summary</div>
+
+        <div class="summary-box">
+          <div class="summary-left">
+            <p><strong>Ship to:</strong><br>
+              Jane Doe<br>
+              63 Mona mews ave<br>
+              St Andrew, Kng 06<br>
+              Jamaica</p>
+
+            <p><strong>Order placed:</strong> January 7, 2029</p>
+            <p><strong>Order number:</strong> 111-123-4526</p>
+            <p><strong>Status:</strong> Shipped</p>
+          </div>
+
+          <div class="summary-right">
+            <div class="payment-method">
+              <p><strong>Payment Method:</strong><br>
+                Visa ending in 1234<br>
+                <button class="related-btn">Related Orders</button>
+              </p>
+            </div>
+
+            <div class="invoice-summary">
+              <p><strong>Invoice Summary:</strong></p>
+              <p>Item(s) Subtotal: JMD 8,002.30</p>
+              <p>Shipping & Handling: JMD 1,119.16</p>
+              <p>Free Shipping: -JMD 1,119.16</p>
+              <p>Total before tax: JMD 8,002.30</p>
+              <p>Estimated Tax: JMD 224.15</p>
+              <p>Exchange Rate: JMD 160.11</p>
+              <p><strong>Grand Total:</strong> JMD 8,390.98</p>
+              <p class="exchange-rate">Exchange Rate<br>1USD = 158.98 JMD</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-section">
+          <h3>Product Details</h3>
+
+          <div class="product">
+            <img src="./Assets/Invoice-img1.png" alt="Hamster cage">
+            <div>
+              <a href="#">
+                Hamster cage, clear hamster habitat, small pet enclosure, Critterly pet supplies, hamster wheel cage,
+                transparent rodent cage, hamster tunnel system, starter cage for hamsters, gerbil cage with accessories,
+                hamster cage with bedding
+              </a>
+              <p>
+                <a href="#">Sold by: Pet Smart</a>
+              </p>
+              <p>
+                <a href="#"> Return window: January 30, 2029</a>
+              </p>
+              <p>$29.99</p>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./Assets/Invoice-img2.png" alt="Hamster food">
+            <div>
+              <a href="#">
+                Critterly hamster food, premium hamster seed mix, small pet food blend, resealable hamster food pouch,
+                hamster diet with grains and fruits, healthy hamster treats, transparent pet food packaging,
+                hamster food branding, nutritious rodent food, hamster food
+              </a>
+              <p>
+                <a>Sold by: Anker Foods</a>
+              </p>
+              <p>
+                <a>Return window: non-returnable</a>
+              </p>
+              <p>$19.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <!-- Footer -->
+  <footer class="invoice-checkout">
+    <div class="footer-logo">
+      <img src="./Assets/critterly-logo.png" alt="Critterly logo">
+      <span>Critterly</span>
+    </div>
+    <nav>
+      <a href="#">Return Policy</a>
+      <a href="#">Condition of Use</a>
+      <a href="#">Refund Policy</a>
+    </nav>
+    <p>© Critterly Pet Store | All Rights Reserved 2025 | Deondre Williams</p>
+  </footer>
+
+<script src="./index.js"></script>
+</body>
+
+</html>

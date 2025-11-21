@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Gemstones&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./stylesheet.css" />
+</head>
+
+<body class="Checkout-page">
+    <!-- Header -->
+    <header>
+        <div class="Checkout-header">
+            <div class="logo" href="#">
+                <img src="./Assets/critterly-logo.png" alt="Critterly Company logo">
+            </div>
+            <h1>Secure Payment</h1>
+            <div class="navigation">
+                <a href="./Cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="checkout-main">
+
+        <!-- LEFT SECTION -->
+        <section class="shipping-section">
+
+            <div class="shipping-header">
+                <span id="shippingAddressDisplay" class="shipping-address"></span>
+            </div>
+
+            <div class="address-info">
+                <button id="useAddressBtn">Use this address</button>
+                <span>OR</span>
+                <button id="changeAddressBtn">Change Address</button>
+                <button class="save-address-btn hidden">Save Address</button>
+            </div>
+
+            <div class="form-grid collapsed-form">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Address line 1">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Address line 2">
+                <input type="text" placeholder="Zip Code">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="Country">
+                <textarea rows="3" placeholder="Add Delivery Notes"></textarea>
+            </div>
+
+
+
+            <div class="payment-method">
+                <p><strong>Payment Method:</strong> Visa 1234</p>
+                <button>Change</button><br>
+                <span class="voucher">Use gift voucher, add promo code</span>
+            </div>
+
+            <div class="cart-item">
+                <img src="./Assets/Invoice-img1.png" alt="Hamster Cage">
+                <div>
+                    <a href="#">Hamster cage, clear hamster habitat, small pet enclosure...</a>
+                    <p>Sold by: <strong>Pet Smart</strong></p>
+                    <p>$29.99</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RIGHT: Checkout and Subscription  -->
+        <aside class="right-column">
+            <section class="checkout-section">
+                <button>Checkout</button>
+                <div class="summary">
+                    <p>Item(s) Subtotal: <strong>JMD 8,002.30</strong></p>
+                    <p>Shipping & Handling: <strong>JMD 1,119.16</strong></p>
+                    <p>Free Shipping: <strong>-JMD 1,119.16</strong></p>
+                    <p>Total before tax: <strong>JMD 8,002.30</strong></p>
+                    <p>Estimated Tax: <strong>JMD 224.15</strong></p>
+                    <p>Exchange Rate: <strong>JMD 160.11</strong></p>
+                    <p class="grand-total">Grand Total: <strong>JMD 8,390.98</strong></p>
+                    <p>Exchange Rate: <br><small>1USD = 158.98 JMD</small></p>
+                </div>
+            </section>
+
+            <section class="subscription">
+                <img src="./Assets/cirtterly-subsrciption.png" alt="Join Critterly gold and save 25% on all orders!">
+                <p>Join Critterly gold and save 25% on all orders!</p>
+            </section>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="invoice-checkout">
+        <div class="footer-logo">
+            <img src="./Assets/critterly-logo.png" alt="Critterly logo">
+            <span>Critterly</span>
+        </div>
+        <nav>
+            <a href="#">Return Policy</a>
+            <a href="#">Condition of Use</a>
+            <a href="#">Refund Policy</a>
+        </nav>
+        <p>© Critterly Pet Store | All Rights Reserved 2025 | Deondre Williams</p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>

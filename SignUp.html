@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Gemstones&display=swap"
+        rel="stylesheet">
+    <title>Sign up</title>
+</head>
+
+<body class="signup-page ">
+    <div class="flex-container">
+        <div class="form-conatiner-signup">
+            <div class="image-container-signup">
+
+            </div>
+
+            <form class="signup-form" acion="#">
+                <h1>Create Account</h1>
+
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name-signup" name="name-signup" placeholder="Jane Doe" required>
+                </div>
+
+                <div class="input date-of-birth">
+                    <label for="date">Date of birth</label>
+                    <input type="date" id="dob-signup" name="dob-signup" required>
+                </div>
+
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email-signup" name="email-signup" placeholder="example@email.com" required>
+                </div>
+
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="No less than 8 characters"
+                        required minlength="8" maxlength="15">
+                </div>
+
+                <div class="action">
+
+                    <button type="submit" class="signin-btn">Sign Up</button>
+                    <a href="./login.html" class="create">
+                        <h5>Already have an account? Login!</h5>
+                    </a>
+                </div>
+
+            </form>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
